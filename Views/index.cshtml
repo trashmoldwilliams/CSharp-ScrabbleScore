@@ -1,0 +1,12 @@
+<h1>Find out how much of a scrabble score your word is!</h1>
+<form action="/" method="post">
+<label for="input"></label>
+<input type="text" name="input">
+<br><br>
+<button type="submit">Click here to make your scrabble score</button>
+</form>
+
+@if (@Model != 0)
+{
+  <p>The word's score is: @Model</p>
+}

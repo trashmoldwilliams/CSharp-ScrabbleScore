@@ -8,13 +8,13 @@ namespace ScrabbleScore.Objects
     public void isWord_forWordBeingALettter_1()
     {
       string testWord = "a";
-      Assert.Equal(1, ScrabbleScore.ScoreWord(testWord));
+      Assert.Equal(1, ScrabbleScores.ScoreWord(testWord));
     }
     [Fact]
     public void isWord_forWordBeingAStringOfWords_14()
     {
       string testWord = "scrAbBle";
-      Assert.Equal(14, ScrabbleScore.ScoreWord(testWord));
+      Assert.Equal(14, ScrabbleScores.ScoreWord(testWord));
     }
   }
 }

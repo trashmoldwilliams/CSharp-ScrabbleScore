@@ -3,13 +3,12 @@ using System;
 
 namespace ScrabbleScore.Objects
 {
-  public class ScrabbleScore
+  public class ScrabbleScores
   {
 
 
-    public ScrabbleScore()
+    public ScrabbleScores()
     {
-
     }
 
     public static int ScoreWord(string input)

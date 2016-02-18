@@ -10,12 +10,12 @@ namespace ScrabbleScore
     {
 
       Get["/"] = _ => {
-        return View["index.cshtml"];
+        int model = 0;
+        return View["index.cshtml", model];
       };
-      Post["/output"] = _ =>
+      Post["/"] = _ =>
       {
-
-        return View["output.cshtml"];
+        return View["index.cshtml", ScrabbleScores.ScoreWord(Request.Form["input"])];
       };
     }
   }

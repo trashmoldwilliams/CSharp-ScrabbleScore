@@ -50,7 +50,8 @@ namespace ScrabbleScore.Objects
 
       int score = 0;
 
-      char[] inputArray = input.ToCharArray();
+      string lowerInput = input.ToLower();
+      char[] inputArray = lowerInput.ToCharArray();
       for (int i = 0; i < inputArray.Length; i++) {
         foreach ( KeyValuePair<char, int> test in testDictionary) {
           if( inputArray[i] == test.Key)
